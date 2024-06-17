@@ -1,7 +1,11 @@
-import app from "./app";
-import connectDB from "./config/database";
+import app from "./app.js";
+import connectDB from "./config/database.js";
 
-// connectDB();
+try {
+    await connectDB();
+} catch (error) {
+    console.log("MongoDB could not connect !!!");
+}
 app.get('/',(req,res,next)=>{
     res.send("app is running");
 })
