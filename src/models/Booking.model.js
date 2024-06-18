@@ -12,7 +12,11 @@ const BookingSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
-    host: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+    host: { 
+      type: mongoose.Schema.Types.ObjectId, 
+      ref: "User", 
+      required: true 
+    },
     start_date: { type: Date, required: true },
     end_date: { type: Date, required: true },
     status: {

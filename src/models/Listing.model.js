@@ -14,4 +14,4 @@ const ListingSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const List = mongoose.model("Listing", ListingSchema);
+export const List = mongoose.model("Listing", ListingSchema);

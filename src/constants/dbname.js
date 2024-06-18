@@ -1,1 +1,1 @@
-export const DBNAme = 'Airbnb';
+export const DBNAme = 'airbnb';

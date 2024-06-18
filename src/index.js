@@ -10,6 +10,6 @@ app.get('/',(req,res,next)=>{
     res.send("app is running");
 })
 
-app.listen(3000,()=>{
-    console.log('Listening on 127.0.0.1:3000');
+app.listen(process.env.PORT,()=>{
+    console.log('Listening on port: ',process.env.PORT);
 })
